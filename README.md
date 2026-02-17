@@ -5,6 +5,16 @@ Football Match Analysis Data Warehouse using Star Schema Design. Includes player
 **Level**: Intermediate  
 **Database**: `match_analysis` 
 
+## Analysis Included
+1.Team Performance Analysis   
+2.Playmaker Analysis   
+3.Possession Strategy Analysis   
+4.Stadium Impact Analysis   
+5.Creative Players Performance   
+6.Venue-Based Player Performance   
+7.Goal Efficiency Analysis   
+8.Seasonal Performance Insight   
+9.Player Contribution Analysis   
 
 
 ## Project Overview
