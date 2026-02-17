@@ -5,7 +5,15 @@ Football Match Analysis Data Warehouse using Star Schema Design. Includes player
 **Level**: Intermediate  
 **Database**: `match_analysis` 
 
-![image](https://user-images.githubusercontent.com/56026296/229609893-b7b1f261-5941-45af-8322-1ccb2535d36b.png)
+## Project Overview
+Star Schema football analytics database built using MySQL.
+Analyzes player performance, team stats, and stadium insights.
+
+## Tools
+MySQL Workbench | SQL | GitHub
+
+## Star Schema Data Model – Match Analysis ER Diagram
+![image](https://github.com/mahesh5hub/football-match-analysis-sql-data-warehouse/blob/main/match_analysis.png)
 
 
 ## Analysis Included
@@ -19,10 +27,6 @@ Football Match Analysis Data Warehouse using Star Schema Design. Includes player
 8.Seasonal Performance Insight   
 9.Player Contribution Analysis   
 
-
-## Project Overview
-Star Schema football analytics database built using MySQL.
-Analyzes player performance, team stats, and stadium insights.
 
 ### Creating Tables
 ```sql
@@ -242,7 +246,7 @@ INSERT INTO Date_Dim VALUES
 (20250731, '2025-07-31', 31, 7, 2025);
 ```
 
-### 1️.Team Performance Analysis:
+## 1️.Team Performance Analysis:
 How many total goals were scored by each team during the 2025 season?
 
 ```sql
@@ -260,7 +264,7 @@ GROUP BY t.Team_Name
 ORDER BY Total_Goals DESC;
 ```
 
-### 2. Playmaker Analysis
+## 2. Playmaker Analysis
 
 Which players ranked in the top 5 for total assists across all matches?
 
@@ -276,7 +280,7 @@ ORDER BY Total_Assists DESC
 LIMIT 5;
 ```
 
-### 3.Possession Strategy Analysis
+## 3.Possession Strategy Analysis
 
 What was the average ball possession percentage achieved by each team?
 ```sql
@@ -303,7 +307,7 @@ GROUP BY s.Stadium_Name
 ORDER BY Goals_Scored DESC;
 ```
 
-### 5. Creative Players Performance
+## 5. Creative Players Performance
 
 Who were the top 5 assist providers based on overall match performance?
 ```sql
@@ -318,7 +322,7 @@ ORDER BY Total_Assists DESC
 LIMIT 5;
 ```
 
-### 6.Venue-Based Player Performance
+## 6.Venue-Based Player Performance
 
 How did player goal contributions vary across different stadiums?
 ```sql
@@ -334,7 +338,7 @@ GROUP BY p.Player_Name , s.Stadium_Name
 ORDER BY Goals DESC;
 ```
 
-### 7. Goal Efficiency Analysis
+## 7. Goal Efficiency Analysis
 
 Which players demonstrated the highest goals-per-match efficiency?
 ```sql
@@ -352,7 +356,7 @@ GROUP BY p.Player_Name
 ORDER BY Goals_Per_Match DESC;
 ```
 
-### 8.Seasonal Performance Insight
+## 8.Seasonal Performance Insight
 
 During which month did a specific player achieve peak goal-scoring performance?
 ```sql
@@ -371,7 +375,7 @@ ORDER BY Goals DESC
 LIMIT 1;
 ```
 
-### 9. Player Contribution Analysis:
+## 9. Player Contribution Analysis:
 Which players contributed the most to total goal involvements (Goals + Assists) ?
 
 ```sql
